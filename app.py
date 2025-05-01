@@ -88,7 +88,8 @@ def generate_response(question, temperature, max_tokens):
     llm = ChatGoogleGenerativeAI(
         model="gemini-1.5-pro-latest",
         temperature=temperature,
-        max_output_tokens=max_tokens
+        max_output_tokens=max_tokens,
+        convert_system_message_to_human=True
     )
     output_parser = StrOutputParser()
     chain = prompt | llm | output_parser
