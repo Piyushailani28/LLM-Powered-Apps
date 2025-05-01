@@ -10,7 +10,7 @@ langchain-groq
 langchain-google-genai==0.0.8
 
 # Vector store and embedding
-faiss-cpu==1.7.4
+faiss-cpu
 sentence-transformers==2.5.1
 huggingface-hub==0.20.3
 transformers==4.37.2
