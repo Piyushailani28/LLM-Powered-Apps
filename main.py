@@ -93,7 +93,7 @@ llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 prompt_template = ChatPromptTemplate.from_template(
     """
     You are a knowledgeable and helpful assistant.
-    Use ONLY the context provided below and the chat history to answer the question. Do NOT use prior knowledge or make up answers.
+    Use ONLY the context provided below and the chat history to answer the question.
     If the answer is not contained in the context, respond with "I'm sorry, the answer is not available in the provided context."
 
     <context>
